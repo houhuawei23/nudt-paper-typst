@@ -233,27 +233,32 @@
   // show par: set block(spacing: 6pt) // for older typst version
   set par(spacing: 6pt) // for newer typst version
   set par(justify: true, leading: 6pt, first-line-indent: 0em)
-  grid(block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
-    #text(font: hei, size: 12pt)[指导教员审核意见：]
-    #v(1em)
-    #text(font: song, size: 12pt)[#h(2em)#comments]
-    #v(63pt) // change here for suitable spacing
-    #text(font: song, size: 12pt)[#h(4em)签名：#h(20em)年#h(2em)月#h(2em)日]
-  ], block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
-    #text(font: hei, size: 12pt)[教研室（研究室、实验室）意见：]
-    #v(117pt)
-    #text(font: song, size: 12pt)[#h(2em)领导签名：#h(20em)年#h(2em)月#h(2em)日]
-  ], block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
-    #text(font: hei, size: 12pt)[系（研究所、重点实验室）意见：]
-    #v(117pt)
-    #text(font: song, size: 12pt)[#h(2em)领导签名：#h(20em)年#h(2em)月#h(2em)日]
-  ], block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
-    #text(font: hei, size: 12pt)[学院教学科研处（教务处）意见：]
-    #v(93pt)
-    #text(font: song, size: 12pt)[#h(27em)（公章）]
-    #v(12pt)
-    #text(font: song, size: 12pt)[#h(27em)年#h(2em)月#h(2em)日]
-  ])
+  grid(
+    block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
+      #text(font: hei, size: 12pt)[指导教员审核意见：]
+      #v(1em)
+      #text(font: song, size: 12pt)[#h(2em)#comments]
+      #v(63pt) // change here for suitable spacing
+      #text(font: song, size: 12pt)[#h(4em)签名：#h(20em)年#h(2em)月#h(2em)日]
+    ], 
+    block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
+      #text(font: hei, size: 12pt)[教研室（研究室、实验室）意见：]
+      #v(117pt)
+      #text(font: song, size: 12pt)[#h(2em)领导签名：#h(20em)年#h(2em)月#h(2em)日]
+    ], 
+    block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
+      #text(font: hei, size: 12pt)[系（研究所、重点实验室）意见：]
+      #v(117pt)
+      #text(font: song, size: 12pt)[#h(2em)领导签名：#h(20em)年#h(2em)月#h(2em)日]
+    ], 
+    block(stroke: (thickness:0.5pt), width: 100%, height: 156pt, inset: 6pt)[
+      #text(font: hei, size: 12pt)[学院教学科研处（教务处）意见：]
+      #v(93pt)
+      #text(font: song, size: 12pt)[#h(27em)（公章）]
+      #v(12pt)
+      #text(font: song, size: 12pt)[#h(27em)年#h(2em)月#h(2em)日]
+    ]
+  )
   [#text(font: song, size: 10.5pt)[注：开题报告由学员撰写，答辩结束交指导教员。]]
 
 }
